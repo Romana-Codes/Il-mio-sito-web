@@ -59,16 +59,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // --- 3. COPIA RAPIDA DELL'EMAIL ---
     const emailLink = document.querySelector('.footer-email');
     if (emailLink) {
-        emailLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            const email = emailLink.textContent;
+        emailLink.addEventListener('click', () => {
+            const email = "maragno.francescaromana@gmail.com";
 
+            // Copia l'email pulita negli appunti
             navigator.clipboard.writeText(email).then(() => {
                 const originalText = emailLink.textContent;
-                emailLink.textContent = "✓ Email copiata negli appunti!";
+                emailLink.textContent = "✓ Email copiata!";
                 emailLink.style.color = "#3fb950";
 
                 setTimeout(() => {
