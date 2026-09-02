@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romana | Software & Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barra di Navigazione -->
+    <header class="navbar">
+        <a href="#" class="logo">romana<span>.dev</span></a>
+        <nav class="nav-links">
+            <a href="#progetti">Progetti</a>
+            <a href="#about">Chi Sono</a>
+            <a href="#contatti" class="nav-cta">Contatti</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <p class="hero-subtitle">
+            Sono specializzata in <span id="typewriter-text"></span><span class="cursor">|</span>
+        </p>
+
+        <!-- Nella Sezione Progetti: aggiungiamo la barra dei filtri -->
+
+
+        <!-- Sezione Progetti Modulare -->
+        <section id="progetti" class="projects-section">
+            <div class="section-header">
+                <h2 class="section-title">Opere & Progetti</h2>
+                <p class="section-subtitle">Strumenti algebrici, interfacce e sistemi forgiati da zero.</p>
+            </div>
+
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">Tutti</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Card 1: Risolutore Cramer -->
+                <article class="project-card" data-category="python">
+                    <div class="card-top">
+                        <span class="project-tag">Python & Matematica</span>
+                        <span class="project-status">v1.0</span>
+                    </div>
+                    <h3 class="project-title">Risolutore Lineare (Metodo Cramer)</h3>
+                    <p class="project-desc">
+                        Algoritmo per il calcolo dei determinanti e la risoluzione automatizzata di sistemi lineari
+                        complessi.
+                    </p>
+                    <div class="card-links">
+                        <a href="https://github.com/romanacodes/cramer-solver" target="_blank" class="card-link">Codice
+                            Sorgente ↗</a>
+                    </div>
+                </article>
+
+                <!-- Card 2: Progetto Futuro (Geografia / Web Dev) -->
+                <article class="project-card placeholder-card" data-category="web">
+                    <div class="card-top">
+                        <span class="project-tag">JavaScript & Mappe</span>
+                        <span class="project-status in-progress">In Corso</span>
+                    </div>
+                    <h3 class="project-title">Atlante Geografico Interattivo</h3>
+                    <p class="project-desc">
+                        Visualizzazione dinamica di coordinate vettoriali, rotte storiche e dati territoriali.
+                    </p>
+                    <div class="card-links">
+                        <span class="card-link-muted">In fase di sviluppo</span>
+                    </div>
+                </article>
+
+                <!-- Card 3: Prossima sfida -->
+                <article class="project-card placeholder-card" data-category="web">
+                    <div class="card-top">
+                        <span class="project-tag">Full-Stack / SQL</span>
+                        <span class="project-status upcoming">Pianificato</span>
+                    </div>
+                    <h3 class="project-title">Sistema di Gestione Dati</h3>
+                    <p class="project-desc">
+                        Applicazione data-driven con interrogazioni relazionali e persistenza su database SQL.
+                    </p>
+                    <div class="card-links">
+                        <span class="card-link-muted">Coming Soon</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sezione About -->
+        <section id="about" class="about-section">
+            <div class="about-card">
+                <h2 class="section-title">Chi Sono</h2>
+                <p class="about-text">
+                    Sono una sviluppatrice che ama guardare oltre la superficie del codice. Il mio approccio unisce il
+                    rigore del pensiero matematico alla sensibilità per interfacce fluide e reattive. Studio
+                    continuamente l'architettura dei dati e del web per costruire soluzioni stabili e durature.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contatti" class="footer">
+        <div class="footer-content">
+            <h2>Iniziamo una Conversazione</h2>
+            <p>Per collaborazioni, opportunità o confronto tecnico:</p>
+            <a href="mailto:romana@esempio.com" class="footer-email">romana@esempio.com</a>
+            <div class="footer-socials">
+                <a href="https://github.com/romanacodes" target="_blank">GitHub</a>
+                <span>•</span>
+                <a href="#progetti">Progetti</a>
+            </div>
+            <p class="footer-copy">© 2026 romana.dev — Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+/* Logo Brand */
+.logo {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.3rem;
+    letter-spacing: -0.5px;
+    color: #f0f6fc;
+}
+
+.logo span {
+    color: #58a6ff;
+    font-weight: 400;
+}
+
+/* About Box */
+.about-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: #c9d1d9;
+    line-height: 1.8;
+}
+
+/* Footer Socials */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    color: #484f58;
+}
+
+.footer-socials a {
+    color: #8b949e;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-socials a:hover {
+    color: #58a6ff;
+}
+
+/* Il cursore lampeggiante del terminale */
+.cursor {
+    color: #58a6ff;
+    font-weight: 300;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Pulsanti dei Filtri */
+.filter-controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.filter-btn {
+    background: #161b22;
+    border: 1px solid #30363d;
+    color: #8b949e;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #238636;
+    color: #ffffff;
+    border-color: #2ea043;
+}
+
+/* Transizione fluida quando le card compaiono/scompaiono */
+.project-card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-card.hidden {
+    display: none;
+}
